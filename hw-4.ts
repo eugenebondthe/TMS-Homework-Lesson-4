@@ -197,18 +197,18 @@ const now: Date = new Date();
 const year: any = now.getFullYear();
 
 let month: any = now.getMonth();
-month = month < 10 ? "0" + (month + 1) : month + 1;
+month = month < 12 ? 0 + (month + 1) : month + 1;
 
 let day: any = now.getDate();
-day = day < 10 ? "0" + day : day;
+day = day < 30 ? 0 + day : day;
 
 let hours: any = now.getHours();
-hours = hours < 10 ? "0" + hours : hours;
+hours = hours < 24 ? 0 + hours : hours;
 
 let minutes: any = now.getMinutes();
-minutes = minutes < 10 ? "0" + minutes : minutes;
+minutes = minutes < 60 ? 0 + minutes : minutes;
 
 let seconds: any = now.getSeconds();
-seconds = seconds < 10 ? "0" + seconds : seconds;
+seconds = seconds < 60 ? 0 + seconds : seconds;
 
 console.log(`Current date: ${month}/${year}/${day}. Current time: ${hours}:${minutes}:${seconds}.`);

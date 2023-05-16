@@ -7,7 +7,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx ts-node hw-5.ts"
+    "test": "npx ts-node hw-4.ts"
   },
   "author": "Eugene Bondarenko",
   "license": "ISC",
